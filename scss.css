@@ -1,0 +1,210 @@
+
+* {
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  background-color: #222222e3;
+  
+}
+
+:focus-visible {
+  outline-width: 3px;
+  outline-color: #78aeda;
+  outline-style: solid;
+}
+
+a {
+/*   text-decoration: none; */
+  color: inherit;
+}
+
+@media screen and (max-height: 1150px) {
+  body {
+    display: flex;
+  }
+  .portfolio {
+    margin: 16px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  body {
+    display: block;
+  }
+}
+
+.portfolio {
+  min-height: 1000px;
+  display: grid;
+  grid-template-columns: 400px 650px;
+}
+
+article h2 {
+  font-weight: 400;
+  border-bottom: 2px solid black;
+  margin-bottom: 24px;
+  width: max-content;
+  font-size: 1.5rem;
+}
+
+article ul {
+  margin-bottom: 12px;
+}
+
+article h3,
+article h4,
+p strong {
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.left {
+  display: grid;
+  background-color: hsl(171, 25%, 11%);
+  color: hsl(210, 33%, 99%);
+  padding: 20px 32px;
+}
+
+.left article h2 {
+  border-bottom: 2px solid hsl(210, 33%, 99%);
+}
+
+.name {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 2.5rem;
+}
+
+.role {
+  font-weight: 300;
+  font-size: 1.2em;
+  letter-spacing: 5px;
+  padding-top: 1em;
+}
+
+.about p {
+  text-align: start;
+}
+
+.stats,
+address {
+  font-size: 0.85em;
+  font-style: normal;
+  line-height: 2;
+}
+address i {
+  margin-top: 2px;
+  margin-right: 6px;
+}
+
+address a {
+  text-decoration: none;
+}
+
+.stats ul {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 4px;
+  grid-template-columns: repeat(auto-fit,minmax(min(100px,100%),1fr));
+}
+
+.fa-external-link-alt {
+  font-size: 0.6em;
+}
+
+.right {
+  display: grid;
+}
+
+.right article {
+  padding: 1em 2em;
+}
+
+.education h4 {
+  font-size: 0.8em;
+}
+
+article p {
+  font-size: 0.85em;
+}
+
+ul {
+  padding-top: 0.3em;
+  padding-bottom: 0.9em;
+}
+
+li {
+  font-size: 0.85em;
+}
+
+.projects p {
+  margin-bottom: 0.8em;
+}
+
+.experience p {
+  margin-top: 4px;
+  font-size: 0.875rem;
+}
+
+.experience li {
+  margin-top: 8px;
+}
+
+.experience li span {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.experience li p {
+  margin-top: 6px;
+}
+
+.bg-grey {
+  background-color: #cbcbc9;
+}
+
+.bg-cream {
+  background-color: #fbfcfd;
+}
+
+.blogs h2 {
+  margin-bottom: 0;
+}
+
+.blogs a {
+  text-decoration: none;
+  margin-top: 14px;
+  display: block;
+  font-size: 0.915rem;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+@media print {
+  body {
+    font-size: 24px;
+  }
+  .portfolio {
+    grid-template-columns: 475px 650px;
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    height: 29.7cm;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+  }
+}

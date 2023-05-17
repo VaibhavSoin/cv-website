@@ -1,0 +1,32 @@
+*{
+    stroke          : black;
+  stroke-width    : .5px;
+  stroke-linejoin : round;
+  animation       : 2s pulsate infinite;
+}
+body{
+    color:white;
+    background-image:url(i2.jpg);
+}
+.ta{
+    color:white;
+    background-image:url(i7.jpg);
+    background-size: cover;
+    height:500px;
+    width:1500px;
+    border-radius:10px;
+}
+p:hover{
+    color:black;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
